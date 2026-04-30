@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // ================= FIREBASE CONNECT =================
-try {
+/*try {
   const serviceAccount = require("./firebaseKey.json");
 
   admin.initializeApp({
@@ -21,7 +21,7 @@ try {
   console.log("Firebase error ❌", error);
 }
 
-const db = admin.firestore();
+const db = admin.firestore();*/
 
 // ================= TOKEN VERIFY =================
 const verifyToken = async (req, res, next) => {
