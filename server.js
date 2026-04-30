@@ -635,6 +635,12 @@ app.get("/user-data", async (req, res) => {
   }
 });
 // ================= SERVER START =================
-app.listen(5000, () => {
-  console.log("Server running on port 5000 🚀");
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("Backend running 🚀");
+});
+
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
 });
